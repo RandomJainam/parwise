@@ -1,0 +1,42 @@
+// firestore.rules
+// Deploy with: firebase deploy --only firestore:rules
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Development mode: allow all reads/writes ─────────────────────────────
+    // WARNING: Switch to production rules before going live!
+    //
+    // match /{document=**} {
+    //   allow read, write: if true;
+    // }
+
+    // ── Production rules ────────────────────────────────────────────────────
+
+    // Parking sites: public read, admin write only
+    match /parkingSites/{siteId} {
+      allow read: if true;
+      allow write: if false; // Set to request.auth.token.admin == true for admin writes
+    }
+
+    // Parking slots: public read (ESP32 updates via Admin SDK)
+    match /parkingSlots/{slotId} {
+      allow read: if true;
+      allow write: if false; // ESP32 writes via Firebase Admin SDK (server-side)
+    }
+
+    // Bookings: users can read/write their own
+    match /bookings/{bookingId} {
+      allow read: if true; // For demo; restrict to: request.auth.uid == resource.data.userId
+      allow create: if true; // For demo; restrict to: request.auth != null
+      allow update: if true; // For demo
+      allow delete: if false;
+    }
+
+    // User profiles
+    match /users/{userId} {
+      allow read, write: if true; // For demo; restrict to: request.auth.uid == userId
+    }
+  }
+}

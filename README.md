@@ -8,6 +8,39 @@ A real-time parking discovery and booking application built with **Next.js 14**,
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue?logo=typescript)
 
 ---
+## 📸 Project Preview
+
+### Interactive Map
+
+![Map](assets/map.jpeg)
+
+### Parking Reservation
+
+![Booking](assets/BOOKING.jpeg)
+
+![VIEW SLOT DETAILS](assets/VIEW_DETAILS.jpeg)
+
+![BOOK LATER](assets/BOOK_FOR_LATER.jpeg)
+
+![BOOK NOW](assets/BOOKNOW.jpeg)
+
+![BOOKING DETAILS](assets/BOOKING_DETAILS.jpeg)
+
+![BOOKING CONFIRMATION](assets/BOOKING_CONFIRMATION.jpeg)
+
+### IoT Hardware Prototype
+
+![Hardware](assets/HARDWARE.jpeg)
+
+### System Architecture
+
+![Architecture](assets/ARCHITECTURE.png)
+
+### Demonstration Video
+
+![Demonstration](assets/Media1.mp4)
+
+---
 
 ## ✨ Features
 

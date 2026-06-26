@@ -12,7 +12,7 @@ A real-time parking discovery and booking application built with **Next.js 14**,
 
 ### Interactive Map
 
-![Map](assets/map.jpeg)
+![Map](assets/MAP.jpeg)
 
 ### Parking Reservation
 

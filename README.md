@@ -38,7 +38,7 @@ A real-time parking discovery and booking application built with **Next.js 14**,
 
 ### Demonstration Video
 
-![Demonstration](assets/Media1.mp4)
+![Demonstration](assets/DEMONSTRATION.mp4)
 
 ---
 
